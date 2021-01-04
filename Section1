@@ -1,0 +1,36 @@
+Creating a movie list application:
+--In this section, we will create a new React application from scratch, starting
+with setting up a new project with webpack and Babel. Setting up a React
+project from scratch will help you understand the basic needs of a project
+
+********npm init -y************8
+
+--By adding the -y flag to the command, we can automatically skip the steps where we set information
+such as the name, version, and description.
+
+Setting up webpack::
+--To run the React application, we need to install webpack 4
+--and webpack CLI as devDependencies.
+
+*************npm install --save-dev webpack webpack-cli****************
+
+--add the start and build scripts to our package.json file
+
+--start and build scripts to our
+application using webpack. As you can see, npm start will run
+webpack in development mode and npm build will run webpack in
+production mode. The biggest difference is that running webpack in
+production mode will minimize our code to decrease the size of the
+project bundle.
+
+--webpack so that this file is the starting point for our application. Place
+the following line of code inside this newly created file:
+
+--If we now run the npm start or npm build command at our command line,
+webpack will start up and create a new directory called dist. Inside this
+directory, there will be a file called main.js that includes our project code.
+Depending on whether we've run webpack in development or production
+mode, the code will be minimized in this file
+
+--to check if the code is running
+**********node dist/main.js********8
